@@ -8,14 +8,13 @@ import org.springframework.stereotype.Service;
 import java.util.Map;
 
 
-
 public interface IPersonService {
-    public Map<String, Person> getAllPerson();
+    Map<String, Person> getAllPerson();
 
-    public ResponseEntity<Object> addNewPerson(Person person);
+    ResponseEntity<Object> addNewPerson(Person person);
 
 
-    public ResponseEntity<Object> updatePerson( Person person);
+    ResponseEntity<Object> updatePerson(Person person);
 
-    public ResponseEntity<Object> deletePerson( String id);
+    ResponseEntity<Object> deletePerson(String id);
 }
