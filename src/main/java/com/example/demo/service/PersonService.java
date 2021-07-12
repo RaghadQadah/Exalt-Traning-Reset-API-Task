@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.*;
 
 @Service
-public class PersonService {
+public class PersonService implements IPersonService{
     //private static final List<Person> personRepo = new ArrayList<>();
      private static Map<String,Person> personRepo = new HashMap<>();
     static {
         Person person1 = new Person();
         person1.setId("1");
-        person1.setName("raghad");
+        person1.setName("raghad123");
         person1.setJobs(Arrays.asList("Student"));
         personRepo.put(person1.getId(),person1);
 
